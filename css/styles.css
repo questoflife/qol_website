@@ -236,15 +236,15 @@ hr {
 .page-header.responsive {
     padding-bottom: 5px;
 }
-
+/* TODO figure out why the hell this won't align*/
 .mynavbar.responsive {
     flex-direction: column;
+    justify-content: flex-start;
 }
 
 .mynavbar.responsive #header-menu-buttons {
     display: flex;
     flex-direction: column;
-
 
 }
 
