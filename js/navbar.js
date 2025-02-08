@@ -1,20 +1,18 @@
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function handleResponsiveNavbar() {
   const navbar = document.getElementById("header-mynavbar");
+  const menuButtons = document.getElementById("header-menu-buttons");
+  const icon = document.getElementById("menu-icon");
+
   // Toggle the 'responsive' class on or off
   if (navbar.className === "mynavbar") {
     navbar.className += " responsive";
-  } else {
-    navbar.className = "mynavbar";
-  }
-
-  // Then toggle the icon
-  const icon = document.getElementById("menu-icon");
-  const menuOpen = icon.classList.contains("fa-bars");
-  if (menuOpen) {
+    menuButtons.style.display = "flex"; // Show menu buttons
     icon.classList.remove("fa-bars");
     icon.classList.add("fa-times");
   } else {
+    navbar.className = "mynavbar";
+    menuButtons.style.display = "none"; // Hide menu buttons
     icon.classList.remove("fa-times");
     icon.classList.add("fa-bars");
   }

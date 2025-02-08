@@ -106,14 +106,21 @@ hr {
 /* PAGE STRUCTURE */
 /******************************************************************************************/
 .page-header {
-    background-color: var(--color-light);
+   /* background-color: var(--color-light);
     border-bottom: var(--color-dark);
     border-style: solid;
     border-width: 0 0 4px 0;
-    /* padding: 10px 0 10px 0; */
     position: sticky;
     top: 0;
     z-index: 1000;
+    */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--color-light);
+    border-bottom: 4px solid var(--color-dark);
+
 }
 
 /* Everything between the header and footer */
@@ -163,8 +170,10 @@ hr {
 /******************************************************************************************/
 #header-mynavbar {
     display: flex;
-    gap: 5px;
     justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.5em 1em;
 }
 
 /* Left Branding Block (Logo + Name) */
@@ -235,6 +244,8 @@ hr {
 .mynavbar.responsive #header-menu-buttons {
     display: flex;
     flex-direction: column;
+
+
 }
 
 .mynavbar.responsive #header-menu-buttons>.menu-button {
@@ -245,7 +256,8 @@ hr {
 }
 
 .mynavbar.responsive #mynavbar-hamburger-open {
-    display: flex;
+    display: flex; /* or block */
+    flex-direction: column; /* if you want them stacked in mobile view */
 }
 
 .mynavbar.responsive #mynavbar-hamburger-closed {
