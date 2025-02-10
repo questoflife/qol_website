@@ -15,7 +15,30 @@ function ServicesSection() {
                 { text: 'Sign Up', href: 'https://discord.gg/m9hVVajQU3' },
             ],
         },
-        // Add other services here...
+        {
+            id: 'personal-coaching',
+            icon: 'fa fa-solid fa-user',
+            title: '1-on-1 Coaching',
+            price: '£50 / 50 mins',
+            description: 'We offer a limited number of 1-on-1 sessions to fundraise. All proceeds go towards covering expenses for running the organization, training and supporting our facilitators, and opening more groups.',
+            bestFor: ['Focused Self-Discovery', 'Getting Unstuck', 'Faster Progress', 'Supporting Our Mission'],
+            buttons: [
+                { text: 'More Info', href: '../services.html#services-details-section', className: 'info-button' },
+                { text: 'Sign Up', href: 'https://discord.gg/m9hVVajQU3' },
+            ],
+        },
+        {
+            id: 'facilitator-training',
+            icon: 'fa fa-solid fa-graduation-cap',
+            title: 'Facilitator Training',
+            price: 'Pay What You Want',
+            description: 'If you\'ve completed at least one of our 16-week groups and want to give back to the community, consider applying to join our team of volunteer facilitators.',
+            bestFor: ['Giving Back to the Community', 'Learning New Skills & Theory', 'Challenging Yourself'],
+            buttons: [
+                { text: 'More Info', href: '../support_us.html#volunteer-section', className: 'info-button' },
+                { text: 'Sign Up', href: 'https://forms.gle/Jxkh56WbbLVXzqGj8' },
+            ],
+        },
     ];
 
     return (
