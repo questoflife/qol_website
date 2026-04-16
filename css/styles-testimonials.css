@@ -1,0 +1,41 @@
+/*****************************************************************************************/
+/* Testimonials                                                                          */
+/*****************************************************************************************/
+#testimonials-section {
+    background-color: var(--color-light-a-bit-transparent);
+    color: var(--color-dark);
+    clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 150px), 0% 100%);
+    -webkit-clip-path: polygon(0% 0%, 100% 10vw, 100% 100%, 0% 100%);
+    padding: 150px 5px 100px 5px;
+}
+
+#testimonials-section .mycard {
+    padding: 0;
+}
+
+.testimonial {
+    font-style: italic;
+    text-align: left;
+    padding: 0 55px;
+    min-height: 512px;
+}
+
+.testimonial-author {
+    text-align: right;
+    padding-right: 80px;
+}
+
+.carousel-control-prev {
+    justify-content: left;
+    color:greenyellow;
+}
+
+.carousel-control-next {
+    justify-content: right;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 50px;
+  width: 50px;
+}
